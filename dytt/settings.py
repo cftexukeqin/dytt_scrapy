@@ -67,7 +67,8 @@ DEFAULT_REQUEST_HEADERS = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'dytt.pipelines.DyttPipeline': 300,
+   # 'dytt.pipelines.DyttPipeline': 300,
+   'dytt.pipelines.DyttmongoPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
